@@ -1,0 +1,56 @@
+*Software Version: 
+	1.2.18
+
+*Operating System: 
+	Linux; 4.4.0-47-generic; #68-Ubuntu SMP Wed Oct 26 19:39:52 UTC 2016; x86_64
+
+*Usage Report Version: 
+	2
+
+*Crash Id: 
+	{abdc90df-36c4-4cf2-b14e-e28318b614f4}
+
+*GPU: 
+	 NVIDIA Corporation G96M [GeForce 9600M GS] (rev a1)
+
+*USB Host Controller( Name, Manufacturer, Driver Version, Driver Date, Driver Provider ): 
+
+*Installed Ram: 
+	3919 MB
+
+*Number of available cores: 
+	2
+
+*CPU:
+	GenuineIntel
+Not Found
+*Supported Instructions: 
+	sse3
+	mmx
+	sse
+	sse2
+	sse4_1
+	ssse3
+*Unsupported Instructions: 
+	avx
+	sse4_2
+	3dnow
+	3dnowext
+	avx2
+	mmxext
+	sse4a
+	avx512cd
+	avx512er
+	avx512f
+	avx512pf
+
+*Successful Captures: 
+	9
+*Failed Captures: 
+	2
+*Crash Count: 
+	0
+*Usage Time: 
+	0
+*Device Ids and Type: 
+	17188507972839142463, 0
