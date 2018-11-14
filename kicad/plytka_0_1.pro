@@ -1,4 +1,4 @@
-update=pon, 12 lis 2018, 17:59:13
+update=śro, 14 lis 2018, 19:16:08
 version=1
 last_client=kicad
 [pcbnew]
@@ -62,3 +62,13 @@ LibName30=libs_external/kicad-lib-master/nodemcu
 LibName31=libs_external/IRM-05-5/IRM-05-5
 LibName32=libs_external/lib_w_relay/w_relay
 LibName33=libs_external/ACS712ELCTR-05B-T/ACS712ELCTR-05B-T
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=
+SpiceForceRefPrefix=0
+SpiceUseNetNumbers=0
+LabSize=60
