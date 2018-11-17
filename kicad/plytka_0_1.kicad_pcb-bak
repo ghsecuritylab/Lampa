@@ -3,7 +3,7 @@
   (general
     (links 137)
     (no_connects 134)
-    (area 23.975 68.298 125.28862 168.3054)
+    (area 23.975 68.298 125.28862 169.55)
     (thickness 1.6)
     (drawings 0)
     (tracks 6)
@@ -1598,7 +1598,7 @@
     )
   )
 
-  (module Discret:R4 (layer F.Cu) (tedit 5BF045DB) (tstamp 5BF0A527)
+  (module Discret:R4 (layer F.Cu) (tedit 5BF0456E) (tstamp 5BF0A527)
     (at 71.374 140.843 270)
     (descr "Resitance 4 pas")
     (tags R)
@@ -1617,7 +1617,7 @@
     (fp_line (start -4.064 1.016) (end -4.064 0) (layer F.SilkS) (width 0.15))
     (fp_line (start -4.064 -0.508) (end -3.556 -1.016) (layer F.SilkS) (width 0.15))
     (fp_line (start 5.08 0) (end 4.064 0) (layer F.SilkS) (width 0.15))
-    (pad 1 thru_hole circle (at -5.08 0 270) (size 2.2 2.2) (drill 0.8128) (layers *.Cu *.Mask F.SilkS)
+    (pad 1 thru_hole circle (at -5.08 0 270) (size 1.524 1.524) (drill 0.8128) (layers *.Cu *.Mask F.SilkS)
       (net 13 ADC_LED1_IN+))
     (pad 2 thru_hole circle (at 5.08 0 270) (size 2.2 2.2) (drill 0.8128) (layers *.Cu *.Mask F.SilkS)
       (net 52 "Net-(JP1-Pad1)"))
@@ -1628,7 +1628,7 @@
     )
   )
 
-  (module Discret:R4 (layer F.Cu) (tedit 5BF045F0) (tstamp 5BF0A52D)
+  (module Discret:R4 (layer F.Cu) (tedit 0) (tstamp 5BF0A52D)
     (at 75.057 140.716 270)
     (descr "Resitance 4 pas")
     (tags R)
@@ -1647,9 +1647,9 @@
     (fp_line (start -4.064 1.016) (end -4.064 0) (layer F.SilkS) (width 0.15))
     (fp_line (start -4.064 -0.508) (end -3.556 -1.016) (layer F.SilkS) (width 0.15))
     (fp_line (start 5.08 0) (end 4.064 0) (layer F.SilkS) (width 0.15))
-    (pad 1 thru_hole circle (at -5.08 0 270) (size 2.2 2.2) (drill 0.8128) (layers *.Cu *.Mask F.SilkS)
+    (pad 1 thru_hole circle (at -5.08 0 270) (size 1.524 1.524) (drill 0.8128) (layers *.Cu *.Mask F.SilkS)
       (net 51 ADC_LED_COMON))
-    (pad 2 thru_hole circle (at 5.08 0 270) (size 2.2 2.2) (drill 0.8128) (layers *.Cu *.Mask F.SilkS)
+    (pad 2 thru_hole circle (at 5.08 0 270) (size 1.524 1.524) (drill 0.8128) (layers *.Cu *.Mask F.SilkS)
       (net 53 "Net-(JP2-Pad1)"))
     (model Discret.3dshapes/R4.wrl
       (at (xyz 0 0 0))
@@ -1658,7 +1658,7 @@
     )
   )
 
-  (module Discret:R4 (layer F.Cu) (tedit 5BF045E9) (tstamp 5BF0A533)
+  (module Discret:R4 (layer F.Cu) (tedit 0) (tstamp 5BF0A533)
     (at 78.994 140.716 270)
     (descr "Resitance 4 pas")
     (tags R)
@@ -1677,9 +1677,9 @@
     (fp_line (start -4.064 1.016) (end -4.064 0) (layer F.SilkS) (width 0.15))
     (fp_line (start -4.064 -0.508) (end -3.556 -1.016) (layer F.SilkS) (width 0.15))
     (fp_line (start 5.08 0) (end 4.064 0) (layer F.SilkS) (width 0.15))
-    (pad 1 thru_hole circle (at -5.08 0 270) (size 2.2 2.2) (drill 0.8128) (layers *.Cu *.Mask F.SilkS)
+    (pad 1 thru_hole circle (at -5.08 0 270) (size 1.524 1.524) (drill 0.8128) (layers *.Cu *.Mask F.SilkS)
       (net 16 ADC_LED2_IN-))
-    (pad 2 thru_hole circle (at 5.08 0 270) (size 2.2 2.2) (drill 0.8128) (layers *.Cu *.Mask F.SilkS)
+    (pad 2 thru_hole circle (at 5.08 0 270) (size 1.524 1.524) (drill 0.8128) (layers *.Cu *.Mask F.SilkS)
       (net 54 "Net-(JP3-Pad1)"))
     (model Discret.3dshapes/R4.wrl
       (at (xyz 0 0 0))
@@ -1778,7 +1778,7 @@
   )
 
   (module Capacitors_ThroughHole:C_Disc_D6_P5 (layer F.Cu) (tedit 0) (tstamp 5BEEFFDF)
-    (at 79.248 123.698 180)
+    (at 79.375 122.301 180)
     (descr "Capacitor 6mm Disc, Pitch 5mm")
     (tags Capacitor)
     (path /5BE9E45E)
@@ -1865,7 +1865,7 @@
     )
   )
 
-  (module Discret:R4 (layer F.Cu) (tedit 5BF045D3) (tstamp 5BF11141)
+  (module Discret:R4 (layer F.Cu) (tedit 5BF03E13) (tstamp 5BF11141)
     (at 59.436 148.082 180)
     (descr "Resitance 4 pas")
     (tags R)
@@ -1886,7 +1886,7 @@
     (fp_line (start 5.08 0) (end 4.064 0) (layer F.SilkS) (width 0.15))
     (pad 1 thru_hole circle (at -5.08 0 180) (size 2.2 2.2) (drill 0.8128) (layers *.Cu *.Mask F.SilkS)
       (net 31 "Net-(Q2-Pad1)"))
-    (pad 2 thru_hole circle (at 5.08 0 180) (size 2.2 2.2) (drill 0.8128) (layers *.Cu *.Mask F.SilkS)
+    (pad 2 thru_hole circle (at 5.08 0 180) (size 1.524 1.524) (drill 0.8128) (layers *.Cu *.Mask F.SilkS)
       (net 33 ESP_PWM_OUT))
     (model Discret.3dshapes/R4.wrl
       (at (xyz 0 0 0))
@@ -1895,7 +1895,7 @@
     )
   )
 
-  (module Discret:R4 (layer F.Cu) (tedit 5BF045D6) (tstamp 5BF11146)
+  (module Discret:R4 (layer F.Cu) (tedit 0) (tstamp 5BF11146)
     (at 59.436 150.876 180)
     (descr "Resitance 4 pas")
     (tags R)
@@ -1914,9 +1914,9 @@
     (fp_line (start -4.064 1.016) (end -4.064 0) (layer F.SilkS) (width 0.15))
     (fp_line (start -4.064 -0.508) (end -3.556 -1.016) (layer F.SilkS) (width 0.15))
     (fp_line (start 5.08 0) (end 4.064 0) (layer F.SilkS) (width 0.15))
-    (pad 1 thru_hole circle (at -5.08 0 180) (size 2.2 2.2) (drill 0.8128) (layers *.Cu *.Mask F.SilkS)
+    (pad 1 thru_hole circle (at -5.08 0 180) (size 1.524 1.524) (drill 0.8128) (layers *.Cu *.Mask F.SilkS)
       (net 31 "Net-(Q2-Pad1)"))
-    (pad 2 thru_hole circle (at 5.08 0 180) (size 2.2 2.2) (drill 0.8128) (layers *.Cu *.Mask F.SilkS)
+    (pad 2 thru_hole circle (at 5.08 0 180) (size 1.524 1.524) (drill 0.8128) (layers *.Cu *.Mask F.SilkS)
       (net 2 GND))
     (model Discret.3dshapes/R4.wrl
       (at (xyz 0 0 0))
