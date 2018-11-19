@@ -1,7 +1,5 @@
 EESchema-LIBRARY Version 2.3
 #encoding utf-8
-#(c) SnapEDA 2016 (snapeda.com)
-#This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA) with Design Exception 1.0
 #
 # ACS712ELCTR-05B-T
 #
@@ -16,19 +14,19 @@ F6 "Unavailable" 0 0 50 H I L BNN
 F7 "ACS712ELCTR-05B-T" 0 0 50 H I L BNN
 F8 "None" 0 0 50 H I L BNN
 DRAW
-P 2 0 0 16 -500 500 -500 -800 N
-P 2 0 0 16 -500 -800 500 -800 N
-P 2 0 0 16 500 -800 500 500 N
-P 2 0 0 16 500 500 -500 500 N
-X VCC 8 -700 300 200 R 40 40 0 0 W 
-X IP+_2 1 -700 100 200 R 40 40 0 0 I 
-X IP-_2 4 -700 0 200 R 40 40 0 0 I 
-X IP+ 2 -700 -100 200 R 40 40 0 0 I 
-X IP- 3 -700 -200 200 R 40 40 0 0 I 
-X FILTER 6 -700 -400 200 R 40 40 0 0 I 
-X GND 5 -700 -600 200 R 40 40 0 0 P 
-X VIOUT 7 700 300 200 L 40 40 0 0 O 
+P 2 0 0 16  -500 -800  500 -800 N
+P 2 0 0 16  -500 500  -500 -800 N
+P 2 0 0 16  500 -800  500 500 N
+P 2 0 0 16  500 500  -500 500 N
+X IP+_2 1 -700 50 200 R 40 40 0 0 I
+X IP+ 2 -700 -50 200 R 40 40 0 0 I
+X IP- 3 -700 -250 200 R 40 40 0 0 I
+X IP-_2 4 -700 -350 200 R 40 40 0 0 I
+X GND 5 -700 -700 200 R 40 40 0 0 P
+X FILTER 6 -700 -550 200 R 40 40 0 0 I
+X VIOUT 7 700 300 200 L 40 40 0 0 O
+X VCC 8 -700 400 200 R 40 40 0 0 W
 ENDDRAW
 ENDDEF
 #
-# End Library
+#End Library
