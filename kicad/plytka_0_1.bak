@@ -555,12 +555,12 @@ NoConn ~ 7150 6750
 $Comp
 L +10V #PWR022
 U 1 1 5BEB7E11
-P 12700 4350
-F 0 "#PWR022" H 12700 4200 50  0001 C CNN
-F 1 "+10V" H 12700 4490 50  0000 C CNN
-F 2 "" H 12700 4350 50  0000 C CNN
-F 3 "" H 12700 4350 50  0000 C CNN
-	1    12700 4350
+P 12400 4150
+F 0 "#PWR022" H 12400 4000 50  0001 C CNN
+F 1 "+10V" H 12400 4290 50  0000 C CNN
+F 2 "" H 12400 4150 50  0000 C CNN
+F 3 "" H 12400 4150 50  0000 C CNN
+	1    12400 4150
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -817,7 +817,7 @@ Text GLabel 6750 2750 0    60   Input ~ 0
 LED2+
 Text GLabel 6700 3800 0    60   Input ~ 0
 LED2-
-Text GLabel 12850 4600 2    60   Input ~ 0
+Text GLabel 12850 4950 2    60   Input ~ 0
 DIM+
 Text GLabel 13150 5350 2    60   Input ~ 0
 DIM-
@@ -1203,17 +1203,6 @@ F 3 "" H 12200 2200 50  0000 C CNN
 	1    12200 2200
 	1    0    0    -1  
 $EndComp
-$Comp
-L R R12
-U 1 1 5BF04887
-P 4450 1750
-F 0 "R12" V 4530 1750 50  0000 C CNN
-F 1 "0" V 4450 1750 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603" V 4380 1750 50  0000 C CNN
-F 3 "" H 4450 1750 50  0000 C CNN
-	1    4450 1750
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	2350 3700 2350 3600
 Wire Wire Line
@@ -1311,10 +1300,6 @@ Wire Wire Line
 Wire Wire Line
 	12400 5750 12550 5750
 Connection ~ 12450 5750
-Wire Wire Line
-	12700 4350 12700 4350
-Wire Wire Line
-	12700 4350 12700 4600
 Wire Wire Line
 	11800 5750 12100 5750
 Wire Wire Line
@@ -1456,7 +1441,7 @@ Wire Wire Line
 Wire Wire Line
 	1000 2850 1050 2850
 Wire Wire Line
-	12600 4600 12850 4600
+	12400 4950 12850 4950
 Wire Wire Line
 	1100 2100 1150 2100
 Wire Wire Line
@@ -1546,9 +1531,6 @@ Wire Wire Line
 	13100 5350 13150 5350
 Wire Wire Line
 	12850 5450 12850 5500
-Wire Wire Line
-	12600 5350 12600 4600
-Connection ~ 12700 4600
 Wire Wire Line
 	12850 5900 12850 6300
 Connection ~ 12850 6050
@@ -1694,9 +1676,7 @@ Wire Wire Line
 Wire Wire Line
 	4200 2050 4700 2050
 Wire Wire Line
-	4300 1750 3200 1750
-Wire Wire Line
-	4600 1750 4700 1750
+	3200 1750 4700 1750
 Connection ~ 4700 1750
 Connection ~ 4700 2050
 Wire Wire Line
@@ -1712,4 +1692,22 @@ Wire Wire Line
 NoConn ~ 12050 3150
 NoConn ~ 11950 2950
 NoConn ~ 11900 2750
+$Comp
+L JUMPER JP6
+U 1 1 5BF47797
+P 12400 4650
+F 0 "JP6" H 12400 4800 50  0000 C CNN
+F 1 "JUMPER" H 12400 4570 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02" H 12400 4650 50  0001 C CNN
+F 3 "" H 12400 4650 50  0000 C CNN
+	1    12400 4650
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	12400 5350 12600 5350
+Wire Wire Line
+	12400 5350 12400 4950
+Wire Wire Line
+	12400 4150 12400 4350
+Connection ~ 12400 4950
 $EndSCHEMATC
