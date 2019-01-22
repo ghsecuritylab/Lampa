@@ -6,7 +6,7 @@
 return {
 	-- global persistent data
 	data = {
-		ESP_IP = { initial = '192.1.1.1' }
+		ESP_IP = { initial = '192.168.1.148' }
 	},
 
 	-- global helper functions

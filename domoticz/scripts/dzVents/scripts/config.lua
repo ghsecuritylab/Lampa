@@ -1,5 +1,6 @@
-PWM_GPIO = 0;
-
+PWM_GPIO = 2;
+LAMP_OFF = 4;
+--ESP_IP = '192.168.1.148'
 return {
    on = {
       devices = {
