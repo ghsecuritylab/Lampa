@@ -2,8 +2,8 @@
 <!DOCTYPE boost_serialization>
 <boost_serialization signature="serialization::archive" version="10">
 <Settings class_id="0" tracking_level="0" version="21">
-	<mWindowTopLeftXPosition>1956</mWindowTopLeftXPosition>
-	<mWindowTopLeftYPosition>405</mWindowTopLeftYPosition>
+	<mWindowTopLeftXPosition>2392</mWindowTopLeftXPosition>
+	<mWindowTopLeftYPosition>30</mWindowTopLeftYPosition>
 	<mWindowWidth>800</mWindowWidth>
 	<mWindowHeight>350</mWindowHeight>
 	<mMaximixed>1</mMaximixed>
@@ -12,7 +12,7 @@
 		<second>English, United States</second>
 	</mLocale>
 	<mLogicHardwareHasRun>1</mLogicHardwareHasRun>
-	<mRunCount>3</mRunCount>
+	<mRunCount>6</mRunCount>
 	<mLowerSampleRateOnError>1</mLowerSampleRateOnError>
 	<mDontShowScreenshotRegionMessageBox>0</mDontShowScreenshotRegionMessageBox>
 	<mAllowInternetAccess>1</mAllowInternetAccess>
@@ -120,8 +120,8 @@
 				<mSizeScale>1</mSizeScale>
 				<mSelected>0</mSelected>
 				<mEnabled>0</mEnabled>
-				<mValueType>2</mValueType>
-				<mValue>1</mValue>
+				<mValueType>1</mValueType>
+				<mValue>0</mValue>
 			</second>
 		</item>
 		<item>
@@ -212,7 +212,7 @@
 	</mLogic16ChannelSelection>
 	<mLogic16SpecificChannels>3410209372</mLogic16SpecificChannels>
 	<mLogic16SpecificAnalyzer>4031648193</mLogic16SpecificAnalyzer>
-	<mLogic16SpecificFinder>4031600500</mLogic16SpecificFinder>
+	<mLogic16SpecificFinder>4031600497</mLogic16SpecificFinder>
 	<mInstallationId>{abdc90df-36c4-4cf2-b14e-e28318b614f4}</mInstallationId>
 	<mLogic16LedBehavior>3</mLogic16LedBehavior>
 	<mEnableSingleClickToZoom>1</mEnableSingleClickToZoom>
@@ -306,7 +306,7 @@
 		<item class_id="19" tracking_level="0" version="0">
 			<first>0</first>
 			<second class_id="20" tracking_level="0" version="21">
-				<mDigitalSampleRateHz>16000000</mDigitalSampleRateHz>
+				<mDigitalSampleRateHz>8000000</mDigitalSampleRateHz>
 				<mAnalogSampleRateHz>0</mAnalogSampleRateHz>
 				<mUseChannelDigital>
 					<count>8</count>
@@ -896,10 +896,10 @@
 	<mSampleUnitScale>1</mSampleUnitScale>
 	<mCaptureTriggerSettings class_id="21" tracking_level="0" version="1">
 		<px class_id="22" tracking_level="1" version="21" object_id="_5">
-			<mTriggerType>2</mTriggerType>
+			<mTriggerType>1</mTriggerType>
 			<mTriggerChannel>
 				<mDeviceId>931762780</mDeviceId>
-				<mChannelIndex>1</mChannelIndex>
+				<mChannelIndex>2</mChannelIndex>
 				<mDataType>1</mDataType>
 			</mTriggerChannel>
 			<mHighChannels class_id="23" tracking_level="0" version="0">
@@ -1005,11 +1005,11 @@
 	</mChannelLabels>
 	<mOverrideUsbPowerRestriction>0</mOverrideUsbPowerRestriction>
 	<mUploadUsageStatistics>1</mUploadUsageStatistics>
-	<mSuccessfulCaptures>9</mSuccessfulCaptures>
-	<mFailedCaptures>2</mFailedCaptures>
+	<mSuccessfulCaptures>78</mSuccessfulCaptures>
+	<mFailedCaptures>16</mFailedCaptures>
 	<mCrashCount>0</mCrashCount>
 	<mSoftwareUpTime>0</mSoftwareUpTime>
-	<mLastUploadedTime>20181014T221445</mLastUploadedTime>
+	<mLastUploadedTime>20190212T211515</mLastUploadedTime>
 	<mCheckForDeviceCalibration>1</mCheckForDeviceCalibration>
 	<mUseTransferSizeLimit>0</mUseTransferSizeLimit>
 	<mUserTransferSizeLimit>0</mUserTransferSizeLimit>

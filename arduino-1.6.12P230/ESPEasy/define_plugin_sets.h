@@ -343,11 +343,12 @@ To create/register a plugin, you have to :
     #define USES_P008   // RFID
     #define USES_P009   // MCP
     #define USES_P099   // MCP41XXX
-    
-    #define USES_P010   // BH1750
-    #define USES_P011   // PME
-    #define USES_P012   // LCD
-    #define USES_P013   // HCSR04
+    #define USES_P098   // MCP32008
+
+  //  #define USES_P010   // BH1750
+  //  #define USES_P011   // PME
+  //  #define USES_P012   // LCD
+  //  #define USES_P013   // HCSR04
     #define USES_P014   // SI7021
     #define USES_P015   // TSL2561
     #define USES_P016   // IR
