@@ -13,10 +13,8 @@ uint8_t Plugin_098_SPI_CS_Pin = 15;  // D8
 bool Plugin_098_SensorAttached = true;
 uint32_t Plugin_098_Sensor_fault = 0;
 
-
-
-static void setup_adc(/* arguments */) {
-
+static void setup_adc()
+{
   pinMode(Plugin_098_SPI_CS_Pin, OUTPUT);
   digitalWrite(Plugin_098_SPI_CS_Pin, LOW);
   delayMicroseconds(100);
@@ -24,11 +22,9 @@ static void setup_adc(/* arguments */) {
   // initialize SPI:
 
   SPI.setHwCs(false);
-
   //SPI.setFrequency(500000);
-  SPI.setDataMode(SPI_MODE3); //MODE3 - 1,1 , MODE0 - 0,0
+  SPI.setDataMode(SPI_MODE0); //MODE3 - 1,1 , MODE0 - 0,0
   SPI.begin();
-  //m_spiBus->begin();
 }
 
 union SpiData {
@@ -42,23 +38,15 @@ union SpiData {
 
 static uint16_t read_adc(uint8_t pin){
 #if 1
-    SpiData adc;
 
+    digitalWrite(Plugin_098_SPI_CS_Pin, LOW);
+    SPI.transfer(0x6);
+    uint16_t tmp3 = SPI.transfer16(0x00);
+    tmp3&=0xFFF;
+    digitalWrite(Plugin_098_SPI_CS_Pin, HIGH);
 
-    // activate ADC with chip select
-digitalWrite(Plugin_098_SPI_CS_Pin, LOW);
-//delayMicroseconds(1);
-
-SPI.transfer(0x6);
-
-//uint8_t tmp1 = SPI.transfer(0);
-//uint8_t tmp2 = SPI.transfer(0);
-//tmp1 &= 0xF;
-
-uint16_t tmp3 = SPI.transfer16(0x00);
-tmp3&=0xFFF;
-
-
+    return tmp3;//(tmp1<<8 )| tmp2;
+//    SpiData adc;
     // send first command byte
   //  SPI.transfer(addr);
     // send second command byte and receive first(msb) 4 bits
@@ -68,8 +56,7 @@ tmp3&=0xFFF;
   //  adc.loByte = m_spiBus->transfer16(0x00);
 
     // deactivate ADC with slave select
-    digitalWrite(Plugin_098_SPI_CS_Pin, HIGH);
- return tmp3;//(tmp1<<8 )| tmp2;
+
 
 #else
 
@@ -161,26 +148,15 @@ boolean Plugin_098(byte function, struct EventStruct *event, String& string)
 
     case PLUGIN_READ:
       {
-        //if (Wire.available())
-        {
-
-          //for (size_t i = 0; i < 8; ++i)
-          {
-
-
           String log = F("MCP32008  : Analog value: ");
           uint8_t port =Settings.TaskDevicePort[event->TaskIndex];
           log+=port;
-
           UserVar[event->BaseVarIndex] = (float)read_adc(port); // now read actual value and store into Nodo var
           log += UserVar[event->BaseVarIndex];
           addLog(LOG_LEVEL_INFO,log);
 
-          }
-
-
           success = true;
-        }
+
         break;
       }
 
