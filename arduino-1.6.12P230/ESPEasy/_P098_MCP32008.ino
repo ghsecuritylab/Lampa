@@ -12,7 +12,7 @@
 uint8_t Plugin_098_SPI_CS_Pin = 15;  // D8
 bool Plugin_098_SensorAttached = true;
 uint32_t Plugin_098_Sensor_fault = 0;
-
+#if 0
 static void setup_adc()
 {
   pinMode(Plugin_098_SPI_CS_Pin, OUTPUT);
@@ -78,9 +78,9 @@ static uint16_t read_adc(uint8_t pin){
 #endif
 }
 
-boolean Plugin_098(byte function, struct EventStruct *event, String& string)
+bool Plugin_098(byte function, struct EventStruct *event, String& string)
 {
-  boolean success = false;
+  bool success = false;
 
   switch (function)
   {
@@ -116,15 +116,16 @@ boolean Plugin_098(byte function, struct EventStruct *event, String& string)
       {
         // Get CS Pin
         // If no Pin is in Config we use 15 as default -> Hardware Chip Select on ESP8266
-        if (Settings.TaskDevicePin1[event->TaskIndex] != 0)
+        if (CONFIG_PIN1 != 0)
         {
           // Konvert the GPIO Pin to a Dogotal Puin Number first ...
-        //  Plugin_098_SPI_CS_Pin = Settings.TaskDevicePin1[event->TaskIndex];
+          Plugin_098_SPI_CS_Pin = CONFIG_PIN1;
         }
-        // Use the default SPI hardware interface.
+
+        // set the slaveSelectPin as an output:
+        pinMode(Plugin_098_SPI_CS_Pin, OUTPUT);
+        // initialize SPI:
         setup_adc();
-
-
         addLog(LOG_LEVEL_INFO, F("P098 : SPI Init"));
 
         success = true;
@@ -149,7 +150,7 @@ boolean Plugin_098(byte function, struct EventStruct *event, String& string)
     case PLUGIN_READ:
       {
           String log = F("MCP32008  : Analog value: ");
-          uint8_t port =Settings.TaskDevicePort[event->TaskIndex];
+          uint8_t port = CONFIG_PORT;
           log+=port;
           UserVar[event->BaseVarIndex] = (float)read_adc(port); // now read actual value and store into Nodo var
           log += UserVar[event->BaseVarIndex];
@@ -168,5 +169,5 @@ boolean Plugin_098(byte function, struct EventStruct *event, String& string)
   }
   return success;
 }
-
+#endif
 #endif // USES_P098

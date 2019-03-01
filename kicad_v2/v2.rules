@@ -1,0 +1,146 @@
+
+(rules PCB v2
+  (snap_angle 
+    fortyfive_degree
+  )
+  (autoroute_settings
+    (fanout off)
+    (autoroute on)
+    (postroute on)
+    (vias on)
+    (via_costs 50)
+    (plane_via_costs 5)
+    (start_ripup_costs 100)
+    (start_pass_no 443)
+    (layer_rule F.Cu
+      (active on)
+      (preferred_direction horizontal)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 2.3)
+    )
+    (layer_rule B.Cu
+      (active on)
+      (preferred_direction vertical)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 1.8)
+    )
+  )
+  (rule
+    (width 381.0)
+    (clear 254.2)
+    (clear 190.5 (type smd_to_turn_gap))
+    (clear 762.2 (type default_"HV_AC"))
+    (clear 800.2 (type default_"HV_DC"))
+    (clear 63.6 (type smd_smd))
+    (clear 762.2 (type smd_"HV_AC"))
+    (clear 800.2 (type smd_"HV_DC"))
+    (clear 762.2 (type "kicad_default"_"HV_AC"))
+    (clear 800.2 (type "kicad_default"_"HV_DC"))
+    (clear 762.2 (type "HV_AC"_"HV_AC"))
+    (clear 800.2 (type "HV_AC"_"HV_DC"))
+    (clear 800.2 (type "HV_DC"_"HV_DC"))
+  )
+  (padstack "Via[0-1]_1500:700_um"
+    (shape
+      (circle F.Cu 1500.0 0.0 0.0)
+    )
+    (shape
+      (circle B.Cu 1500.0 0.0 0.0)
+    )
+    (attach off)
+  )
+  (padstack "Via[0-1]_3800:1500_um"
+    (shape
+      (circle F.Cu 3800.0 0.0 0.0)
+    )
+    (shape
+      (circle B.Cu 3800.0 0.0 0.0)
+    )
+    (attach off)
+  )
+  (via 
+    "Via[0-1]_1500:700_um" "Via[0-1]_1500:700_um" default
+  )
+  (via 
+    "Via[0-1]_3800:1500_um" "Via[0-1]_3800:1500_um" default
+  )
+  (via 
+    "Via[0-1]_1500:700_um-kicad_default" "Via[0-1]_1500:700_um" "kicad_default"
+  )
+  (via 
+    "Via[0-1]_3800:1500_um-kicad_default" "Via[0-1]_3800:1500_um" "kicad_default"
+  )
+  (via 
+    "Via[0-1]_1500:700_um-HV_AC" "Via[0-1]_1500:700_um" "HV_AC"
+  )
+  (via 
+    "Via[0-1]_3800:1500_um-HV_AC" "Via[0-1]_3800:1500_um" "HV_AC"
+  )
+  (via 
+    "Via[0-1]_1500:700_um-HV_DC" "Via[0-1]_1500:700_um" "HV_DC"
+  )
+  (via 
+    "Via[0-1]_3800:1500_um-HV_DC" "Via[0-1]_3800:1500_um" "HV_DC"
+  )
+  (via_rule
+    default "Via[0-1]_1500:700_um"
+  )
+  (via_rule
+    "kicad_default" "Via[0-1]_1500:700_um-kicad_default"
+  )
+  (via_rule
+    "HV_AC" "Via[0-1]_3800:1500_um-HV_AC"
+  )
+  (via_rule
+    "HV_DC" "Via[0-1]_3800:1500_um-HV_DC"
+  )
+  (class default
+    (clearance_class default)
+    (via_rule default)
+    (rule
+      (width 381.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class "kicad_default"
+    GND +12V GNDA +3V3 +3.3VADC "ADC_LED1+" "ADC_LED_Current" "DAC_OUT"
+    "Net-(P1-Pad1)" "Net-(P1-Pad2)" "Led_dimm" DS18B20 "Net-(P8-Pad1)" "Net-(P8-Pad2)" "Net-(Q1-Pad1)" "Net-(Q1-Pad2)"
+    "Net-(Q1-Pad3)" "Net-(Q2-Pad2)" "LED_ON" "COMP_OUT" "Net-(R12-Pad1)" "Net-(R13-Pad1)" "LED_current" "Net-(R18-Pad2)"
+    "Net-(R19-Pad1)" "DAC_SCL" "DAC_SDA" "Net-(R22-Pad2)" "Net-(R23-Pad2)" "Net-(R24-Pad1)" "LED_DIMM_threshold" "ADC_CLK"
+    "ADC_MISO" "ADC_MOSI" "ADC_CS" "Net-(D1-PadA)" "Net-(C5-Pad1)" "Net-(C6-Pad1)" "Net-(C10-Pad1)" "ADC_LED3+"
+    "ADC_LED2+" "ADC_LED4-" "ADC_LED4+"
+    (clearance_class "kicad_default")
+    (via_rule kicad_default)
+    (rule
+      (width 381.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class "HV_AC"
+    "Net-(F1-Pad2)" "AC_L" "AC_N" "AC_L_MEANWELL"
+    (clearance_class "HV_AC")
+    (via_rule HV_AC)
+    (rule
+      (width 1270.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class "HV_DC"
+    "LED_Current_meas_in" "Net-(JP1-Pad2)" "LED2-" LED1+ "LED4-" LED2+ "LED1-" LED4+
+    "LED3-" LED3+
+    (clearance_class "HV_DC")
+    (via_rule HV_DC)
+    (rule
+      (width 1300.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+)

@@ -45,9 +45,9 @@ Not Found
 	avx512pf
 
 *Successful Captures: 
-	33
+	103
 *Failed Captures: 
-	6
+	20
 *Crash Count: 
 	0
 *Usage Time: 

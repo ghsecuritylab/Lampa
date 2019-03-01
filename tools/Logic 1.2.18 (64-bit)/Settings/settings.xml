@@ -2,17 +2,17 @@
 <!DOCTYPE boost_serialization>
 <boost_serialization signature="serialization::archive" version="10">
 <Settings class_id="0" tracking_level="0" version="21">
-	<mWindowTopLeftXPosition>2392</mWindowTopLeftXPosition>
-	<mWindowTopLeftYPosition>30</mWindowTopLeftYPosition>
+	<mWindowTopLeftXPosition>2049</mWindowTopLeftXPosition>
+	<mWindowTopLeftYPosition>29</mWindowTopLeftYPosition>
 	<mWindowWidth>800</mWindowWidth>
-	<mWindowHeight>350</mWindowHeight>
+	<mWindowHeight>1170</mWindowHeight>
 	<mMaximixed>1</mMaximixed>
 	<mLocale class_id="1" tracking_level="0" version="0">
 		<first>en-us</first>
 		<second>English, United States</second>
 	</mLocale>
 	<mLogicHardwareHasRun>1</mLogicHardwareHasRun>
-	<mRunCount>6</mRunCount>
+	<mRunCount>10</mRunCount>
 	<mLowerSampleRateOnError>1</mLowerSampleRateOnError>
 	<mDontShowScreenshotRegionMessageBox>0</mDontShowScreenshotRegionMessageBox>
 	<mAllowInternetAccess>1</mAllowInternetAccess>
@@ -34,11 +34,11 @@
 	</mAnalyzerExportDefaultExtension>
 	<mDeveloperAnalyzerFolder></mDeveloperAnalyzerFolder>
 	<mCaptureChannelSettings class_id="4" tracking_level="0" version="0">
-		<count>5</count>
+		<count>8</count>
 		<item_version>0</item_version>
 		<item class_id="5" tracking_level="0" version="0">
 			<first class_id="6" tracking_level="0" version="21">
-				<mDeviceId>931762780</mDeviceId>
+				<mDeviceId>17188507972839142463</mDeviceId>
 				<mChannelIndex>0</mChannelIndex>
 				<mDataType>1</mDataType>
 			</first>
@@ -53,14 +53,14 @@
 				<mInvertData>0</mInvertData>
 				<mSizeScale>1</mSizeScale>
 				<mSelected>0</mSelected>
-				<mEnabled>0</mEnabled>
+				<mEnabled>1</mEnabled>
 				<mValueType>1</mValueType>
 				<mValue>0</mValue>
 			</second>
 		</item>
 		<item>
 			<first>
-				<mDeviceId>931762780</mDeviceId>
+				<mDeviceId>17188507972839142463</mDeviceId>
 				<mChannelIndex>1</mChannelIndex>
 				<mDataType>1</mDataType>
 			</first>
@@ -82,7 +82,7 @@
 		</item>
 		<item>
 			<first>
-				<mDeviceId>931762780</mDeviceId>
+				<mDeviceId>17188507972839142463</mDeviceId>
 				<mChannelIndex>2</mChannelIndex>
 				<mDataType>1</mDataType>
 			</first>
@@ -104,7 +104,7 @@
 		</item>
 		<item>
 			<first>
-				<mDeviceId>931762780</mDeviceId>
+				<mDeviceId>17188507972839142463</mDeviceId>
 				<mChannelIndex>3</mChannelIndex>
 				<mDataType>1</mDataType>
 			</first>
@@ -126,20 +126,86 @@
 		</item>
 		<item>
 			<first>
-				<mDeviceId>931762780</mDeviceId>
-				<mChannelIndex>0</mChannelIndex>
-				<mDataType>0</mDataType>
+				<mDeviceId>17188507972839142463</mDeviceId>
+				<mChannelIndex>4</mChannelIndex>
+				<mDataType>1</mDataType>
+			</first>
+			<second>
+				<mR>255</mR>
+				<mG>255</mG>
+				<mB>0</mB>
+				<mA>255</mA>
+				<mDisplayIndex>4</mDisplayIndex>
+				<mLabel>Channel 4</mLabel>
+				<mMinimized>0</mMinimized>
+				<mInvertData>0</mInvertData>
+				<mSizeScale>1</mSizeScale>
+				<mSelected>0</mSelected>
+				<mEnabled>0</mEnabled>
+				<mValueType>2</mValueType>
+				<mValue>1</mValue>
+			</second>
+		</item>
+		<item>
+			<first>
+				<mDeviceId>17188507972839142463</mDeviceId>
+				<mChannelIndex>5</mChannelIndex>
+				<mDataType>1</mDataType>
+			</first>
+			<second>
+				<mR>0</mR>
+				<mG>255</mG>
+				<mB>0</mB>
+				<mA>255</mA>
+				<mDisplayIndex>5</mDisplayIndex>
+				<mLabel>Channel 5</mLabel>
+				<mMinimized>0</mMinimized>
+				<mInvertData>0</mInvertData>
+				<mSizeScale>1</mSizeScale>
+				<mSelected>0</mSelected>
+				<mEnabled>0</mEnabled>
+				<mValueType>2</mValueType>
+				<mValue>1</mValue>
+			</second>
+		</item>
+		<item>
+			<first>
+				<mDeviceId>17188507972839142463</mDeviceId>
+				<mChannelIndex>6</mChannelIndex>
+				<mDataType>1</mDataType>
 			</first>
 			<second>
 				<mR>0</mR>
 				<mG>0</mG>
-				<mB>0</mB>
+				<mB>255</mB>
 				<mA>255</mA>
-				<mDisplayIndex>4</mDisplayIndex>
-				<mLabel>Channel 0</mLabel>
+				<mDisplayIndex>6</mDisplayIndex>
+				<mLabel>Channel 6</mLabel>
 				<mMinimized>0</mMinimized>
 				<mInvertData>0</mInvertData>
-				<mSizeScale>2</mSizeScale>
+				<mSizeScale>1</mSizeScale>
+				<mSelected>0</mSelected>
+				<mEnabled>0</mEnabled>
+				<mValueType>2</mValueType>
+				<mValue>1</mValue>
+			</second>
+		</item>
+		<item>
+			<first>
+				<mDeviceId>17188507972839142463</mDeviceId>
+				<mChannelIndex>7</mChannelIndex>
+				<mDataType>1</mDataType>
+			</first>
+			<second>
+				<mR>160</mR>
+				<mG>32</mG>
+				<mB>240</mB>
+				<mA>255</mA>
+				<mDisplayIndex>7</mDisplayIndex>
+				<mLabel>Channel 7</mLabel>
+				<mMinimized>0</mMinimized>
+				<mInvertData>0</mInvertData>
+				<mSizeScale>1</mSizeScale>
 				<mSelected>0</mSelected>
 				<mEnabled>0</mEnabled>
 				<mValueType>2</mValueType>
@@ -212,7 +278,7 @@
 	</mLogic16ChannelSelection>
 	<mLogic16SpecificChannels>3410209372</mLogic16SpecificChannels>
 	<mLogic16SpecificAnalyzer>4031648193</mLogic16SpecificAnalyzer>
-	<mLogic16SpecificFinder>4031600497</mLogic16SpecificFinder>
+	<mLogic16SpecificFinder>4031600485</mLogic16SpecificFinder>
 	<mInstallationId>{abdc90df-36c4-4cf2-b14e-e28318b614f4}</mInstallationId>
 	<mLogic16LedBehavior>3</mLogic16LedBehavior>
 	<mEnableSingleClickToZoom>1</mEnableSingleClickToZoom>
@@ -297,8 +363,8 @@
 		</item>
 	</mDeviceConfigurations>
 	<mCaptureDeviceId>
-		<mDeviceId>931762780</mDeviceId>
-		<mDeviceType>4</mDeviceType>
+		<mDeviceId>17188507972839142463</mDeviceId>
+		<mDeviceType>0</mDeviceType>
 	</mCaptureDeviceId>
 	<mSavedDeviceSettings class_id="18" tracking_level="0" version="0">
 		<count>5</count>
@@ -306,7 +372,7 @@
 		<item class_id="19" tracking_level="0" version="0">
 			<first>0</first>
 			<second class_id="20" tracking_level="0" version="21">
-				<mDigitalSampleRateHz>8000000</mDigitalSampleRateHz>
+				<mDigitalSampleRateHz>100000</mDigitalSampleRateHz>
 				<mAnalogSampleRateHz>0</mAnalogSampleRateHz>
 				<mUseChannelDigital>
 					<count>8</count>
@@ -892,14 +958,14 @@
 			</second>
 		</item>
 	</mSavedDeviceSettings>
-	<mSampleTimeSignificand>1</mSampleTimeSignificand>
+	<mSampleTimeSignificand>5</mSampleTimeSignificand>
 	<mSampleUnitScale>1</mSampleUnitScale>
 	<mCaptureTriggerSettings class_id="21" tracking_level="0" version="1">
 		<px class_id="22" tracking_level="1" version="21" object_id="_5">
-			<mTriggerType>1</mTriggerType>
+			<mTriggerType>0</mTriggerType>
 			<mTriggerChannel>
-				<mDeviceId>931762780</mDeviceId>
-				<mChannelIndex>2</mChannelIndex>
+				<mDeviceId>18446744073709551615</mDeviceId>
+				<mChannelIndex>4294967295</mChannelIndex>
 				<mDataType>1</mDataType>
 			</mTriggerChannel>
 			<mHighChannels class_id="23" tracking_level="0" version="0">
@@ -918,7 +984,7 @@
 	<mInstantaneousSettings class_id="24" tracking_level="0" version="1">
 		<px class_id="25" tracking_level="1" version="21" object_id="_6">
 			<mWidth>1</mWidth>
-			<mDutyCycle>0</mDutyCycle>
+			<mDutyCycle>1</mDutyCycle>
 			<mFrequency>1</mFrequency>
 			<mMinMaxVoltage>1</mMinMaxVoltage>
 			<mPeakToPeakVoltage>1</mPeakToPeakVoltage>
@@ -927,10 +993,10 @@
 			<mShowDigitalMeasurement>1</mShowDigitalMeasurement>
 			<mShowAnalogMeasurement>0</mShowAnalogMeasurement>
 			<mShowVoltageMeasurement>1</mShowVoltageMeasurement>
-			<mShowOnAnnotationStack>0</mShowOnAnnotationStack>
+			<mShowOnAnnotationStack>1</mShowOnAnnotationStack>
 		</px>
 	</mInstantaneousSettings>
-	<mRecordingSamples>1000</mRecordingSamples>
+	<mRecordingSamples>0</mRecordingSamples>
 	<mRecordingType>0</mRecordingType>
 	<mEnableProtocolSearch>1</mEnableProtocolSearch>
 	<mUseTraceColor>0</mUseTraceColor>
@@ -1005,11 +1071,11 @@
 	</mChannelLabels>
 	<mOverrideUsbPowerRestriction>0</mOverrideUsbPowerRestriction>
 	<mUploadUsageStatistics>1</mUploadUsageStatistics>
-	<mSuccessfulCaptures>78</mSuccessfulCaptures>
-	<mFailedCaptures>16</mFailedCaptures>
+	<mSuccessfulCaptures>105</mSuccessfulCaptures>
+	<mFailedCaptures>21</mFailedCaptures>
 	<mCrashCount>0</mCrashCount>
 	<mSoftwareUpTime>0</mSoftwareUpTime>
-	<mLastUploadedTime>20190212T211515</mLastUploadedTime>
+	<mLastUploadedTime>20190227T225248</mLastUploadedTime>
 	<mCheckForDeviceCalibration>1</mCheckForDeviceCalibration>
 	<mUseTransferSizeLimit>0</mUseTransferSizeLimit>
 	<mUserTransferSizeLimit>0</mUserTransferSizeLimit>

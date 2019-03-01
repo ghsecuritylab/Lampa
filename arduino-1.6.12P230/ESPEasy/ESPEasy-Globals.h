@@ -1,6 +1,6 @@
 #define STR_HELPER(x) #x
 #define STR(x) STR_HELPER(x)
-
+#include <ESPeasySerial.h>
 #ifndef ESPEASY_GLOBALS_H_
 #define ESPEASY_GLOBALS_H_
 
@@ -188,7 +188,7 @@
 #endif
 
 #define MAX_FLASHWRITES_PER_DAY           100 // per 24 hour window
-#define INPUT_COMMAND_SIZE                 80 
+#define INPUT_COMMAND_SIZE                 80
 
 #define NODE_TYPE_ID_ESP_EASY_STD           1
 #define NODE_TYPE_ID_ESP_EASYM_STD         17
@@ -266,9 +266,9 @@
 #define CMD_WIFI_DISCONNECT               135
 
 #if defined(PLUGIN_BUILD_TESTING) || defined(PLUGIN_BUILD_DEV)
-  #define DEVICES_MAX                      75
+  #define DEVICES_MAX                      77
 #else
-  #define DEVICES_MAX                      50
+  #define DEVICES_MAX                      52
 #endif
 
 #if defined(ESP8266)

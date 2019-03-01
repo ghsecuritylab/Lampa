@@ -12,7 +12,7 @@ uint8_t Plugin_099_SPI_CS_Pin = 15;  // D8
 bool Plugin_099_SensorAttached = true;
 uint32_t Plugin_099_Sensor_fault = 0;
 double Plugin_099_Celsius = 0.0;
-
+#if 0
 class mcp411xxx {
 private:
   uint8_t m_chipSelectPin;
@@ -57,9 +57,9 @@ void mcp411xxx::setResistance(uint8_t value)
   digitalWrite(m_chipSelectPin, HIGH);
 }
 
-boolean Plugin_099(byte function, struct EventStruct *event, String& string)
+bool Plugin_099(byte function, struct EventStruct *event, String& string)
 {
-  boolean success = false;
+  bool success = false;
   static mcp411xxx DigitalResistor;
 
   switch (function)
@@ -158,5 +158,5 @@ boolean Plugin_099(byte function, struct EventStruct *event, String& string)
   }
   return success;
 }
-
+#endif
 #endif // USES_P099

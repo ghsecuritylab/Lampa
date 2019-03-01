@@ -8,4 +8,8 @@ $CMP NodeMCU_Amica_R2
 D NodeMCU 0.9
 $ENDCMP
 #
+$CMP mini_ESP8266
+D NodeMCU 0.9
+$ENDCMP
+#
 #End Doc Library
