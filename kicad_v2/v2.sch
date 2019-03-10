@@ -137,7 +137,7 @@ F 3 "" H 9250 6150 50  0000 C CNN
 $EndComp
 Text GLabel 8600 5700 0    60   Input ~ 0
 LED_Current_meas_in
-Text GLabel 8600 6800 0    60   Input ~ 0
+Text GLabel 8550 7400 0    60   Input ~ 0
 LED_Current_meas_out
 $Comp
 L GNDA #PWR04
@@ -434,8 +434,8 @@ L CP C1
 U 1 1 5C6DA8C2
 P 950 2100
 F 0 "C1" H 975 2200 50  0000 L CNN
-F 1 "10u" H 975 2000 50  0000 L CNN
-F 2 "Capacitors_Tantalum_SMD:TantalC_SizeB_EIA-3528_Reflow" H 988 1950 50  0001 C CNN
+F 1 "100u" H 975 2000 50  0000 L CNN
+F 2 "Capacitors_SMD:c_elec_6.3x5.3" H 988 1950 50  0001 C CNN
 F 3 "" H 950 2100 50  0000 C CNN
 	1    950  2100
 	1    0    0    -1  
@@ -542,12 +542,12 @@ $EndComp
 $Comp
 L +3.3V #PWR020
 U 1 1 5C6DB440
-P 3250 1900
-F 0 "#PWR020" H 3250 1750 50  0001 C CNN
-F 1 "+3.3V" H 3250 2040 50  0000 C CNN
-F 2 "" H 3250 1900 50  0000 C CNN
-F 3 "" H 3250 1900 50  0000 C CNN
-	1    3250 1900
+P 3700 1900
+F 0 "#PWR020" H 3700 1750 50  0001 C CNN
+F 1 "+3.3V" H 3700 2040 50  0000 C CNN
+F 2 "" H 3700 1900 50  0000 C CNN
+F 3 "" H 3700 1900 50  0000 C CNN
+	1    3700 1900
 	1    0    0    -1  
 $EndComp
 Text GLabel 6000 9150 1    60   Input ~ 0
@@ -1143,7 +1143,7 @@ F 3 "" H 6250 3800 50  0000 C CNN
 	1    6250 3800
 	1    0    0    -1  
 $EndComp
-Text GLabel 3800 8500 2    60   Input ~ 0
+Text GLabel 3800 8700 2    60   Input ~ 0
 LED_ON
 Text GLabel 2800 8500 0    60   Input ~ 0
 ADC_CLK
@@ -1153,11 +1153,11 @@ Text GLabel 2800 8700 0    60   Input ~ 0
 ADC_MOSI
 Text GLabel 2800 8800 0    60   Input ~ 0
 ADC_CS
-Text GLabel 3800 8600 2    60   Input ~ 0
+Text GLabel 3800 8500 2    60   Input ~ 0
 DAC_SDA
-Text GLabel 3800 8700 2    60   Input ~ 0
-DAC_SCL
 Text GLabel 3800 8400 2    60   Input ~ 0
+DAC_SCL
+Text GLabel 3800 8600 2    60   Input ~ 0
 DS18B20
 $Comp
 L GND #PWR039
@@ -1716,12 +1716,12 @@ cewka  5v 70ohm, 72.0mA\n
 $Comp
 L JUMPER JP1
 U 1 1 5C733CE7
-P 8750 6000
-F 0 "JP1" H 8750 6150 50  0000 C CNN
-F 1 "JUMPER" H 8750 5920 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x02" H 8750 6000 50  0001 C CNN
-F 3 "" H 8750 6000 50  0000 C CNN
-	1    8750 6000
+P 8750 7100
+F 0 "JP1" H 8750 7250 50  0000 C CNN
+F 1 "JUMPER" H 8750 7020 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02" H 8750 7100 50  0001 C CNN
+F 3 "" H 8750 7100 50  0000 C CNN
+	1    8750 7100
 	0    1    1    0   
 $EndComp
 $Comp
@@ -1749,12 +1749,12 @@ $EndComp
 $Comp
 L JUMPER JP2
 U 1 1 5C74A298
-P 2950 1950
-F 0 "JP2" H 2950 2100 50  0000 C CNN
-F 1 "JUMPER" H 2950 1870 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x02" H 2950 1950 50  0001 C CNN
-F 3 "" H 2950 1950 50  0000 C CNN
-	1    2950 1950
+P 3400 1950
+F 0 "JP2" H 3400 2100 50  0000 C CNN
+F 1 "JUMPER" H 3400 1870 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02" H 3400 1950 50  0001 C CNN
+F 3 "" H 3400 1950 50  0000 C CNN
+	1    3400 1950
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1834,8 +1834,6 @@ F 3 "" H 3850 -450 50  0000 C CNN
 	1    3850 -450
 	1    0    0    -1  
 $EndComp
-Text Notes 800  5650 0    60   ~ 0
-ten trzeba jeszcze obliczyc, zależy od spadku napiec na PNP
 $Comp
 L GNDA #PWR067
 U 1 1 5C7070FE
@@ -2036,9 +2034,7 @@ Wire Wire Line
 Connection ~ 8750 6450
 Connection ~ 8750 6750
 Wire Wire Line
-	8600 6800 8750 6800
-Wire Wire Line
-	8750 6800 8750 6750
+	8750 6750 8750 6800
 Wire Wire Line
 	9250 3950 9250 3850
 Wire Wire Line
@@ -2076,10 +2072,10 @@ Wire Wire Line
 	900  1900 900  1950
 Connection ~ 950  1950
 Wire Wire Line
-	2150 1950 2650 1950
+	2150 1950 3100 1950
 Connection ~ 2300 1950
 Wire Wire Line
-	950  2250 2600 2250
+	950  2250 2900 2250
 Connection ~ 1200 2250
 Connection ~ 1750 2250
 Connection ~ 2300 2250
@@ -2108,7 +2104,7 @@ Wire Wire Line
 Wire Wire Line
 	3250 3050 3250 3000
 Wire Wire Line
-	3250 1950 3250 1900
+	3700 1950 3700 1900
 Connection ~ 2600 1950
 Wire Wire Line
 	2350 4850 2350 4750
@@ -2446,7 +2442,7 @@ Wire Wire Line
 Wire Wire Line
 	2450 5900 2450 5800
 Wire Wire Line
-	8750 6450 8750 6300
+	8750 5700 8750 6450
 Connection ~ 2650 3050
 Wire Wire Line
 	3150 -500 3150 -300
@@ -2782,4 +2778,19 @@ NoConn ~ 5600 -300
 NoConn ~ 5600 -550
 NoConn ~ 5600 -900
 NoConn ~ 5600 -1150
+$Comp
+L CP C32
+U 1 1 5C7C4F89
+P 2900 2100
+F 0 "C32" H 2925 2200 50  0000 L CNN
+F 1 "470u" H 2925 2000 50  0000 L CNN
+F 2 "Capacitors_ThroughHole:C_Radial_D10_L21_P5" H 2938 1950 50  0001 C CNN
+F 3 "" H 2900 2100 50  0000 C CNN
+	1    2900 2100
+	1    0    0    -1  
+$EndComp
+Connection ~ 2900 1950
+Connection ~ 2600 2250
+Wire Wire Line
+	8550 7400 8750 7400
 $EndSCHEMATC
