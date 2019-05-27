@@ -2793,4 +2793,36 @@ Connection ~ 2900 1950
 Connection ~ 2600 2250
 Wire Wire Line
 	8550 7400 8750 7400
+Text Notes 2600 5700 0    60   ~ 0
+usunac R27
+Text Notes 2900 6150 0    60   ~ 0
+BC mły pinout\n
+Text Notes 11950 5950 0    60   ~ 0
+usunac R19\n
+Text Notes 15100 5850 0    60   ~ 0
+comparator jest push pull\n
+Text Notes 3150 5100 0    60   ~ 0
+zmienic przekaznik!\n
+Text Notes 11900 5300 0    60   ~ 0
+zmniejszyc zdecydowanie lub usunac\n\n
+Text Notes 2000 7900 0    60   ~ 0
+czy LED_ON jest bezpieczny na D4? moze lepiej D0
+Text Notes 13000 9050 0    60   ~ 0
+usunac lub zabezpieczyc D0 ew kanal pomiarowy na ADC\n
+NoConn ~ 2950 8400
+NoConn ~ 2950 8200
+Text Notes 750  8250 0    60   ~ 0
+comp out moze na A0?
+Text Notes 10500 6900 0    60   ~ 0
+zmienic na MCP6001\n
+Text Notes 7550 5550 0    60   ~ 0
+To powinno byc na wyjsciu z zasilacza, teraz jest na wejsciu\n
+Text Notes 7800 6350 0    60   ~ 0
+Low side measurement\n
+Text Notes 9400 7500 0    60   ~ 0
+zmienic wartosc opornikow te saja dzielnik tylko do 1A\n
+Text Notes 13850 3550 0    60   ~ 0
+tutaj powinien byc dzielnik napiecia by mierzyc jak faktycznie sterujemy
+Text Notes 9350 7700 0    60   ~ 0
+Alternatywnie zostawic te oporniki i dac rownloegle 0.1 bocznik. \nObliczneia tabelka mail rezystory\n
 $EndSCHEMATC

@@ -5,7 +5,8 @@ return {
    on = {
       devices = {
          'PWM',
-		'Resistor'
+		'Resistor',
+      'DAC'
       }
    },
    execute = function(domoticz, switch)
